@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="windGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4aa;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00b4d8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0077b6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bubbleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00b4d8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0077b6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main circle background -->
+  <circle cx="50" cy="50" r="48" fill="url(#windGradient)"/>
+  
+  <!-- Chat bubble -->
+  <path d="M25 35 C25 28 31 22 40 22 L60 22 C69 22 75 28 75 35 L75 50 C75 57 69 63 60 63 L45 63 L35 73 L35 63 L40 63 C31 63 25 57 25 50 Z" fill="white" opacity="0.95"/>
+  
+  <!-- Wind lines inside bubble -->
+  <path d="M32 36 Q40 34 48 36 Q56 38 62 36" stroke="url(#bubbleGradient)" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M35 44 Q45 42 55 44 Q62 46 68 44" stroke="url(#bubbleGradient)" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M32 52 Q42 50 52 52 Q58 54 62 52" stroke="url(#bubbleGradient)" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <!-- Small wind swirl accent -->
+  <path d="M68 28 Q78 25 82 32" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+  <path d="M72 35 Q80 33 83 38" stroke="white" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+</svg>

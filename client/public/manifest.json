@@ -1,0 +1,26 @@
+{
+  "name": "Windchat",
+  "short_name": "Windchat",
+  "description": "Fast and secure messaging like the wind",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0e1621",
+  "theme_color": "#00b4d8",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/windchat.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["social", "communication"],
+  "shortcuts": [
+    {
+      "name": "New Chat",
+      "url": "/?action=new-chat",
+      "description": "Start a new conversation"
+    }
+  ]
+}
