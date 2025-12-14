@@ -40,7 +40,7 @@ router.get('/search', authenticate, async (req: AuthRequest, res: Response) => {
       }
     }
 
-    // Search with case-insensitive mode for SQLite
+    // Search with case-insensitive mode for PostgreSQL
     const users = await prisma.user.findMany({
       where: {
         AND: [
@@ -48,9 +48,9 @@ router.get('/search', authenticate, async (req: AuthRequest, res: Response) => {
           {
             OR: [
               { phone: { contains: searchQuery } },
-              { firstName: { contains: searchQuery, mode: 'insensitive' } },
-              { lastName: { contains: searchQuery, mode: 'insensitive' } },
-              { username: { contains: searchQuery, mode: 'insensitive' } },
+              { firstName: { contains: searchQuery } },
+              { lastName: { contains: searchQuery } },
+              { username: { contains: searchQuery } },
             ],
           },
         ],
